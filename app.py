@@ -1,7 +1,7 @@
 import streamlit as st
 
 PAGES = ["Home", "Jurassic-1 Chat Bot", "Longitudinal Analysis and GDPR", "Comparing Forbes 500 vs Indian Startups", "FTC Paragraph Extractor", "Summarizer",
-         "Question and Answering", "Explainable AI"]
+          "Explainable AI"]
 PAGE_CONFIG = {'page_title': 'Online Privacy Project', 'layout': "wide"}
 st.set_page_config(**PAGE_CONFIG)
 
@@ -27,9 +27,9 @@ def main():
     elif selection == "Summarizer":
         from summarizer import summary
         summary()
-    elif selection == "Question and Answering":
-        from qna import qna
-        qna()
+    #elif selection == "Question and Answering":
+        #from qna import qna
+        #qna()
     elif selection == "Explainable AI":
         from explainable_ai import explain
         explain()

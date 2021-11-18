@@ -21,6 +21,7 @@ def explain():
                 cls_explainer = SequenceClassificationExplainer(
                     model,
                     tokenizer)
+                text = " ".join(text.split(" ")[:250]) 
                 words = cls_explainer(text)
                 html = cls_explainer.visualize()
     if html != None:
